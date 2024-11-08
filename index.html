@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mukundan's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mukundan</h1>
+        <p>Expert Python Developer | Web Development | Problem Solving</p>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </header>
+
+    <nav>
+        <a href="#about" class="scroll-link">About</a>
+        <a href="#skills" class="scroll-link">Skills</a>
+        <a href="#projects" class="scroll-link">Projects</a>
+        <a href="#contact" class="scroll-link">Contact</a>
+    </nav>
+
+    <section id="about" class="fade-in">
+        <h2>About Me</h2>
+        <p>
+            I'm Mukundan, an experienced Python developer with a strong foundation in problem-solving and web development. My technical skills are complemented by strong soft skills, enabling me to work effectively in teams and adapt to dynamic project requirements.
+        </p>
+    </section>
+
+    <section id="skills" class="fade-in">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>Web Development (HTML, CSS, JavaScript)</li>
+            <li>Data Analysis</li>
+            <li>Problem Solving</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="fade-in">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3 class="project-title">Automated News Generator</h3>
+            <p class="project-details" style="display: none;">
+                A Python-based news generator that scrapes and presents the latest news from various categories including sports, technology, and science.
+            </p>
+        </div>
+        <div class="project">
+            <h3 class="project-title">Real-Time Weather Dashboard</h3>
+            <p class="project-details" style="display: none;">
+                Built a weather application using JavaScript, HTML, and Python for backend data processing. The app provides current weather details and forecasts based on user location.
+            </p>
+        </div>
+        <div class="project">
+            <h3 class="project-title">Interactive Quiz Platform</h3>
+            <p class="project-details" style="display: none;">
+                Developed an interactive quiz app using Python and JavaScript with a sleek UI. The platform allows real-time scoring and feedback.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <h2>Contact</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="formFeedback" style="display: none;">Thank you for your message, Mukundan will get back to you soon!</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
